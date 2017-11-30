@@ -52,11 +52,11 @@ All contributors hold their original Copyright 2017.
 * The key points to remember in considering Debianos social dynamics as applied to becoming a package maintainer are these:
 
     - Debian is a volunteer-powered project, and self-motivation and friendly cooperation are crucial.
-    - Debianos development is consistently evolving, and maintainers must adapt along with it. This adaptation must be self-driven; you canot rely on others to bring you along.
+    - Debianos development is consistently evolving, and maintainers must adapt along with it. This adaptation must be self-driven; you cannot rely on others to bring you along.
 
 ## Programs Needed for Development
 
-Though many if not all packages necessary for development should come installed with the base Debian installation, itos good to check they are present with *aptitude show package* or *dpkg -s package*. The most important package to make sure is installed is *build-essential*. It should pull in other packages that are necessary for the build environment if theyore not already installed.
+Though many if not all packages necessary for development should come installed with the base Debian installation, it's good to check they are present with *aptitude show package* or *dpkg -s package*. The most important package to make sure is installed is *build-essential*. It should pull in other packages that are necessary for the build environment if theyore not already installed.
 
 Other packages are some measure of helpful and/or necessary for building particular packages down the road. Some are particular compilers for specific languages (i.e. *gfortran* or *gpc*) or packages for scripting languages themselves (i.e. *perl* and *python*). Others make parts of the process easier (such as the *debhelper/dh-make* packages or the *fakeroot* tool) or allow checking for errors after the build (*lintian*). The full range of additional build packages listed should be installed and understood before proceeding.
 
@@ -89,7 +89,7 @@ There are a few documentations that will help solve any problems we encounter du
 ## Import Upstream
 
 
-    1. First, create the first version of a package, outside of Git. Once it done, you can import the package using the import-dsc command.
+    1. First, create the first version of a package, outside of Git. Once this is done, you can import the package using the import-dsc command.
 
 ~~~shell
     $ gbp import-dsc /path/to/package_0.1-1.dsc
@@ -120,10 +120,10 @@ When there is a new version upstream, you could use the following steps to updat
 
 ## Choosing your program
 
-The steps to follow after choosing a package to create and in order to check if the package is already in the distribution archive are; the aptitude command, the debian packages web page and the debian package tracker web page.  Debian already has packages in the Debian archive which is much larger than that of contributors with upload rights.  If you are able to adopt the package, get the sources something like apt-get source but if you are installing new packages in Debian follow the steps below:
+The steps to follow after choosing a package to create and in order to check if the package is already in the distribution archive are; the aptitude command, the debian packages web page and the debian package tracker web page.  Debian already has packages in the Debian archive which is much larger than that of contributors with upload rights.  If you are able to adopt the package, get the sources by using the apt-get source command, but if you are installing new packages in Debian follow the steps below:
 
     1. First step is to confirm that the program works. 
-    2. Second, Make sure no one is working on the package. If no one is working on it, file an ITP bug report to the wnpp pseudo-package using report bug. If someone else is already working on it, contact them if you feel you need to. 
+    2. Second, Make sure no one is working on the package. If no one is working on it, file an ITP bug report to the WNPP pseudo-package using report bug. If someone else is already working on it, contact them if you feel you need to. 
     3. Third, the software must have a license. 
     4. Fourth, the program should not introduce security and maintenance concerns into the Debian system.  The program should be well documented, should not run setuid root and should not be a daemon.
 
@@ -134,13 +134,13 @@ As a new maintainer, you are encouraged to create simple packages, intermediate 
 There are a few steps mentioned on this section to get the package and try it out. 
 
     1. First step is to find and download the original source code. 
-    2. Second, if your package program comes in tar+gzip format with the extension .tar.gz, format with the extension .tar .bz2 or tar + xz format , it usually contain a directory called package-version with all the sources inside. 
+    2. Second, if your package program comes in tar+gzip format with the extension .tar.gz, format with the extension .tar .bz2 or tar + xz format , it usually contains a directory called package-version with all the sources inside. 
     3. Third, if your program comes as some other sort of archive, you should unpack it with the appropriate tools and repack it. 
 
 ## Simple build systems
 
     1. Simple programs comes with a Makefile which can be compiled by invoking make. 
-    2. Compile and run to make sure your program works so it wonot break something else while its installing or running. 
+    2. Compile and run to make sure your program works so it wont break something else while its installing or running. 
     3. You can run make clean to clean up the build directory. 
     4. You can use the make uninstall to remove all the installed files.
 
@@ -164,7 +164,7 @@ Ubuntu is a Linux distro that starts with the breadth of Debian and adds regular
 Ubuntu builds on the foundations of Debian's architecture and infrastructure but there are important differences such as, Ubuntu has its own user interface, a separate developer community and different release process. 
 Debian is the rock upon which Ubuntu is built. It is a volunteer project that has developed and maintained a GNV/Linux Operating System of the same name over a decade.
 Since its launch, the Debian project has grown to comprise more than 1,000 members with official developers status, alongside many more volunteers and contributors.
-Debian is a free operating system. An operating system is the set of basic programs and utilities that make your computer run. At the core of operating system is a Kernel. The Kernel is the most fundamental program on the computer and does all the basic housekeeping and lets you start other programs. Debian system use Linux Kernel or the BSD Kernel. Today Debian encompasses over 20,000 packages of free open source applications and documentation.
+Debian is a free operating system. An operating system is the set of basic programs and utilities that make your computer run. At the core of the operating system is a Kernel. The Kernel is the most fundamental program on the computer and does all the basic housekeeping and lets you start other programs. Debian system use Linux Kernel or the BSD Kernel. Today Debian encompasses over 20,000 packages of free open source applications and documentation.
 
 **About Ubuntu**
 
@@ -252,7 +252,7 @@ The archive of release notes on the Beta releases of Elive can be found at http:
 
 ### What is BIOS?
 
-First things first. BIOS stands for Basic Input Output System referred to as BIOS, is software stored on a small memory chip on the motherboard. It give the computer a set of instructions on how to perform some of the basic functions such as booting and keyboard control as well as configure the hardware in a computer including the hard drive, floppy drive, USB, optical drive, CPU, memory to list a few.
+BIOS stands for Basic Input Output System. BIOS is software stored on a small memory chip on the motherboard. It gives the computer a set of instructions on how to perform some of the basic functions such as booting and keyboard control as well as configure the hardware in a computer including the hard drive, floppy drive, USB, optical drive, CPU, memory to list a few.
 
 ### What is EFI and UEFI? 
 
@@ -351,28 +351,27 @@ Elive currently has three theme options available by default.
 
 ### Change Themes
 
-Right click on the desktop to bring up the menu, hover over Enlightenment to bring up enlightenment sub menu. Hover over about theme and click it, this will show you the current theme.  Close the about theme and right click on the desktop again to bring up the menu. Hover over Settings, scroll down and hover over Theme, you will see the three options available. Right click on the Theme you want and wait for it to change, this may take a minute or two depending on the theme. Open windows and applications will lock up during the transition, this is normal.
+Left click on the desktop to bring up the menu, hover over Enlightenment to bring up enlightenment sub menu. Hover over about theme and click it, this will show you the current theme.  Close the about theme and Left click on the desktop again to bring up the menu. Hover over Settings, scroll down and hover over Theme, you will see the three options available. Left click on the Theme you want and wait for it to change, this may take a minute or two depending on the theme. Open windows and applications will lock up during the transition, this is normal.
 
 
 ### Change Wallpaper
 
-Right click on the desktop to bring up the menu. Hover over Settings and right click it. A settings window will appear. Right click on Wallpaper, the wallpaper settings will appear. Choose one the the wallpapers and click apply. 
+Left click on the desktop to bring up the menu. Hover over Settings and Left click it. A settings window will appear. Left click on Wallpaper, the wallpaper settings will appear. Choose one the the wallpapers and click apply. 
 
 ### Live / Animated Wallpapers
 
-There are two methods for doing this that I know of, here are both.
+There are two methods for adding live/animated wallpapers.
 
 
 #### Live Wallpaper: Method 1
 
 
-The first method is to download an HD Wallpaper in .gif format. You can download one here: Animated Wallpaper Sample gif. After you finish downloading your animated wallpaper you have to put it in the right directory open a Terminology terminal and navigate to /Downloads, or wherever you have your .gif wallpaper you downloaded. Now you have to move the wallpaper to the /usr/share/enlightenment/data/backgrounds/ . The command to move the file is:
-
+The first method is to download an HD Wallpaper in .gif format. You can download one here: Animated Wallpaper Sample gif. After you finish downloading your animated wallpaper you have to put it in the right directory open a Terminology terminal and navigate to /Downloads, or wherever you have your .gif wallpaper you downloaded. Now you have to move the wallpaper to the /usr/share/enlightenment/data/backgrounds/.
 ~~~shell
 sudo mv "name of file without quotes.gif" /usr/share/enlightenment/data/backgrounds/
 ~~~
 
-Close the terminal and right click on the desktop to bring up the menu, click settings and then Wallpaper. The wallpaper settings will appear and it will open the directory where you just moved your wallpaper. Choose your animated wallpaper and click apply. Close the wallpaper settings.
+Close the terminal and Left click on the desktop to bring up the menu, click settings and then Wallpaper. The wallpaper settings will appear and it will open the directory where you just moved your wallpaper. Choose your animated wallpaper and click apply. Close the wallpaper settings.
 
 NOTE: If you didn't see your wallpaper then your command may have been mistyped, don't forget to remove the quotes.
 
@@ -382,7 +381,7 @@ NOTE: If you didn't see your wallpaper then your command may have been mistyped,
 
 The second method is to download a HD wallpaper .gif and transfer it with the Thunar File Manager. Download your gif using the link above or any you choose in .gif format. Open the thunar file manager and from the home directory click downloads, or navigate to your .gif wallpaper. Open another thunar file manager window by clicking the icon in the dock again. Press (control) and (h) at the same time to show hidden files. Click .e and then e17, now click backgrounds. Drag and drop your animated wallpaper .gif from downloads to the backgrounds directory you just opened. After you transfer the wallpaper press (control) and (h) again to hide the config files. Close the file managers
 
-Right click on the desktop to bring up the menu, click settings and then Wallpaper. The wallpaper settings will appear. In the top left click Personal, now you should see the wallpaper you transferred in the list below, click it. Now click apply and close the wallpaper settings.
+Left click on the desktop to bring up the menu, click settings and then Wallpaper. The wallpaper settings will appear. In the top left click Personal, now you should see the wallpaper you transferred in the list below, click it. Now click apply and close the wallpaper settings.
 
 ## Advanced Customizations
 
@@ -528,11 +527,11 @@ $ dpkg-scanpackages dists/local/custom/binary-i586 | gzip > dists/local/custom/b
 
 ## Override File
 
-An override file can be optionally specified. If no override file exists/, dev/null must be provided as an explicit argument. 
+An override file can be optionally specified. If no override file exists, dev/null must be provided as an explicit argument. 
 
 ## Working with Repos
 
-Working with repositories may mean either of two different things:
+Working with repositories may mean one or two different things:
 
 1. You can use a repository with the apt family of programs (apt, apt-get, apt-cache, aptitude) to browse or install packages
 
@@ -566,15 +565,15 @@ echo "deb http://ftp.debian.org/debian stable main contrib non-free" >> /etc/apt
 
 ## User Management
 
-To maintain the privacy of users of the Linux system and manage their accounts and supervision, as well as track the problems they will go through, find the solutions to these problems, and inform users the changes, update, and upgrade the system. Even if there is a one user using the system it was always a challenge for the managing users. I will show you some tools and some tasks assigned to add the user to Linux system where you see adding and deleting accounts is an easy process for managing users.
+To maintain the privacy of users of the Linux system and manage their accounts and supervision, as well as track the problems they will go through, find the solutions to these problems, and inform users the changes, updates, and upgrades made to the system. I will show you some tools and some tasks assigned to add the user to the Linux system where you will see adding and deleting accounts is an easy process for managing users.
 
-Before we talk about how to creating and deleting a user account I will talk about the most important text file(/etc/passwd) because is processing the all most and necessary details and information about all users in the Linux system.
+Before we talk about how to create and delete a user account I will talk about the most important text file (/etc/passwd) this text file contains all necessary details and information about all users in the Linux system.
 
-This file it is open to read only for users, and it is read and writable for root account.
+This file is read only for users, and is read and writable for root account.
 
 ### /etc/passwd file
 
-The /etc/passwd file containe only one separate line, limited by a colon (:) for each user account in the system, also it is stored the information for each user using the Linux system. Every time we add new user to the system all details and information for the new user will stored in the same file. 
+The /etc/passwd file contains only one separate line, limited by a colon (:) for each user account in the system, also it stores the information for each user using the Linux system. Every time we add a new user to the system all details and information for the new user will stored in the same file. 
 
 root /h/jamal  >>> sudo  cat  /etc/passwd
 
@@ -588,7 +587,7 @@ jacquie: x:1004:1004: jacquie, 1,,:/home/jacquie :/bin/bash
 
 matthew: x:1005:1005: matthew, 1,,:/home/matthew :/bin/bash
 
-to get depth in the file I will take the entry of my user name jamal.
+to get depth in the file I will take the entry of my username jamal.
 
  
 
@@ -603,7 +602,7 @@ Jamal       :    x      :   1001 :   1001   :    jamal Ibrahim   ,    1   ,,   :
     3. **UID field**: Every time when a user account is created, it is assigned with a user id or UID (UID for the user 'jamal' is 1001, in this case) and this field specifies the same.
     4. **GID field**: Similar to the UID field, this field specifies which group the user belongs to, the group details being present in /etc/group file.
     5. **Comment/Description/User Info field**: This field is the short comment/description/information of the user account.
-    6. **User Home Directory**: Every time the user sign in to the system, he is taken to his Home directory, where all his personal files reside. This field provides the absolute path to the user's home directory (/home/jamal in this case).
+    6. **User Home Directory**: Every time the user signs into the system, he/she is taken to their Home directory, where all their personal files reside. This field provides the absolute path to the user's home directory (/home/jamal in this case).
     7. **Shell**: This field show, the user has access to the shell mentioned in this field (user 'jamal' has been given access to /bin/bash or simply bash shell).
 
 ## Adding new user accounts to Linux system
